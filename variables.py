@@ -1,10 +1,10 @@
 import json
 
 
-with open("src/hobbies_and_interests.json", "r") as file:
+with open("hobbies_and_interests.json", "r") as file:
     hobbies_and_interests = json.load(file)
 
-with open("src/country_codes.json", "r") as json_file:
+with open("country_codes.json", "r") as json_file:
     country_codes = json.load(json_file)
 
 
