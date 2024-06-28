@@ -66,7 +66,7 @@ def app_ui():
         date_range = st.date_input(
             "What is the date range you are interested in traveling?",
             min_value=today,
-            value=[datetime(2023, 1, 1), datetime(2023, 12, 31)],
+            value=[today, datetime(2023, 12, 31)],
             key="DateRange",
         )
         interests = st.multiselect(
