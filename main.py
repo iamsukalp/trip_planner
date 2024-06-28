@@ -1,6 +1,6 @@
 import streamlit as st  # type: ignore
 from variables import country_codes, hobbies_and_interests, default_message
-from datetime import datetime
+from datetime import datetime, timedelta
 from allcities import cities
 from tripCrew import TripCrew
 
@@ -66,7 +66,7 @@ def app_ui():
         date_range = st.date_input(
             "What is the date range you are interested in traveling?",
             min_value=today,
-            value=[today, datetime(2023, 12, 31)],
+            value=[today, today + timedelta(days=7)],
             key="DateRange",
         )
         interests = st.multiselect(
