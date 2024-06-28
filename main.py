@@ -8,7 +8,7 @@ from tripCrew import TripCrew
 st.set_page_config(layout="wide", page_title="Trip Planner", page_icon="📅")
 countries = list(country_codes)
 
-today = datetime.date.today()
+today = datetime.now().date()
 
 if "plan" not in st.session_state:
     st.session_state.plan = ""
